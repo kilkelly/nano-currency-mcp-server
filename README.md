@@ -111,7 +111,7 @@ Notes:
 
 ### 7. Try out the tools by prompting Claude Desktop with nano-related prompts
 
-[VIDEO_HERE]
+https://github.com/user-attachments/assets/c877cc5a-0847-416c-b169-a988cac796f9
 
 ## 🚨 Disclaimer 🚨
 As always when working with real world value, in this case Nano, **be careful** when using this software. The authors and contributors shall not be held liable for any use of this software's functionality, intentional or unintentional, that leads to an undesired lose of funds.
