@@ -1,0 +1,41 @@
+{
+  "name": "nano-currency-mcp-server",
+  "version": "1.0.0",
+  "description": "Send Nano currency from AI agents/LLMs",
+  "main": "nano-currency.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kilkelly/nano-currency-mcp-server.git"
+  },
+  "keywords": [
+    "nano",
+    "nanocurrency",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "ai-agent",
+    "ai-agents",
+    "ai-assistant",
+    "ai-assistants",
+    "agent",
+    "agents",
+    "assistant",   
+    "assistants",
+    "llm",
+    "llms",
+    "crypto"
+  ],
+  "author": "Frank Kilkelly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kilkelly/nano-currency-mcp-server/issues"
+  },
+  "homepage": "https://github.com/kilkelly/nano-currency-mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.7.0",
+    "bignumber.js": "9.1.2",
+    "nanocurrency": "2.5.0",
+    "zod": "3.24.2"
+  }
+}
