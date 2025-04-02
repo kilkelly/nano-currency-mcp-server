@@ -182,7 +182,7 @@ const nano_send_parameters = {
 
 server.tool(
   'nano_send',
-  'Send a specified amount of Nano currency from a predefined account to a destination Nano address',
+  'Send a specified amount of Nano currency from a predefined account to a destination Nano address.',
   nano_send_parameters,
   async function (parameters) {
     
@@ -259,7 +259,7 @@ const nano_account_info_parameters = {
 
 server.tool(
   'nano_account_info',
-  'Retrieve detailed information about a specific Nano account/address, including balance (in Nano and raw units), representative, and frontier block',
+  'Retrieve detailed information about a specific Nano account/address, including balance (in Nano and raw units), representative, and frontier block.',
   nano_account_info_parameters,
   async function (parameters) {  
     try {
@@ -308,7 +308,7 @@ const block_info_parameters = {
 
 server.tool(
   'block_info',
-  'Retrieve detailed information about a specific Nano block',
+  'Retrieve detailed information about a specific Nano block.',
   block_info_parameters,
   async function (parameters) {  
     try {
