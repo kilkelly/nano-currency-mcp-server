@@ -280,6 +280,7 @@ server.tool(
 server.tool(
   'nano_my_account_info',
   'Retrieve detailed information about my Nano account/address, including balance (in Nano and raw units), representative, and frontier block. This is the account that is used to send Nano from.',
+  {},
   async function () {  
     try {
       NANO_PRIVATE_KEY_SCHEMA.parse(process.env.NANO_PRIVATE_KEY)
