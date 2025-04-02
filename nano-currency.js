@@ -23,7 +23,7 @@ import * as N from 'nanocurrency'
 import BigNumber from "bignumber.js"
 
 const SERVER_NAME = 'nano_currency'
-const VERSION = '1.0.0'
+const VERSION = '1.0.1'
 
 const NANO_MAX_SEND_AMOUNT_DEFAULT = 0.01
 
