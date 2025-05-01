@@ -1,4 +1,5 @@
 # Nano Currency MCP Server
+[![smithery badge](https://smithery.ai/badge/@kilkelly/nano-currency-mcp-server)](https://smithery.ai/server/@kilkelly/nano-currency-mcp-server)
 
 This Model Context Protocol (MCP) server gives MCP-compatible clients (which include some AI agents) the ability to send Nano currency and retrieve account & block information via the Nano node RPC.
 

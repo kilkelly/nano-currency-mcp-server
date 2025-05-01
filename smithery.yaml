@@ -1,0 +1,41 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - nanoRpcUrl
+    properties:
+      nanoRpcUrl:
+        type: string
+        description: URL to communicate with a Nano node RPC (required)
+      nanoWorkGenerationUrl:
+        type: string
+        description: URL to communicate with a Nano work generation RPC (optional)
+      nanoPrivateKey:
+        type: string
+        description: Nano private key for signing transactions (optional for info tools,
+          required for send)
+      nanoMaxSendAmount:
+        type: number
+        description: Maximum amount of Nano allowed per transaction (optional)
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['nano-currency.js'],
+      env: {
+        NANO_RPC_URL: config.nanoRpcUrl,
+        ...(config.nanoWorkGenerationUrl ? { NANO_WORK_GENERATION_URL: config.nanoWorkGenerationUrl } : {}),
+        ...(config.nanoPrivateKey ? { NANO_PRIVATE_KEY: config.nanoPrivateKey } : {}),
+        ...(config.nanoMaxSendAmount !== undefined ? { NANO_MAX_SEND_AMOUNT: String(config.nanoMaxSendAmount) } : {})
+      }
+    })
+  exampleConfig:
+    nanoRpcUrl: http://localhost:7076
+    nanoWorkGenerationUrl: http://localhost:7076
+    nanoPrivateKey: E3F2A1D4B7C89E6F1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7Q8R9S0T1U2V3W4
+    nanoMaxSendAmount: 0.05
