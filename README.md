@@ -3,6 +3,10 @@
 
 This Model Context Protocol (MCP) server gives MCP-compatible clients (which include some AI agents) the ability to send Nano currency and retrieve account & block information via the Nano node RPC.
 
+<a href="https://glama.ai/mcp/servers/@kilkelly/nano-currency-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@kilkelly/nano-currency-mcp-server/badge" alt="Nano Currency Server MCP server" />
+</a>
+
 AI agents are increasingly adopting the MCP standard so this server can give them the ability to send Nano at their owner's request or possibility autonomously in some setups 🤖
 
 ## ❔ What is MCP?
@@ -38,7 +42,6 @@ git clone https://github.com/kilkelly/nano-currency-mcp-server.git
 cd nano-currency-mcp-server
 npm install
 ```
-
 
 
 You will need an MCP client to connect to the MCP server (see the Claude Desktop setup later as an example MCP client). Each client will have its own way to connect to MCP servers. For your chosen client you will have to find out how environment variables for a MCP server are set. When you know how you will need to set the following environment variables to use the Nano Currency MCP Server.
