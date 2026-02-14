@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/kilkelly-nano-currency-mcp-server-badge.png)](https://mseep.ai/app/kilkelly-nano-currency-mcp-server)
+
 # Nano Currency MCP Server
 
 `Nano Currency MCP Server` gives MCP-compatible clients (including AI agents) the ability to send Nano currency and retrieve account & block information via the Nano node RPC.
